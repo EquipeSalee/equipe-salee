@@ -7,8 +7,8 @@
   <style>
     @font-face {
       font-family: 'Aurora Pro';
-      src: url('AuroraPro-Regular.woff2') format('woff2'),
-           url('AuroraPro-Regular.woff') format('woff');
+      src: url('fonts/AuroraPro-Regular.woff2') format('woff2'),
+           url('fonts/AuroraPro-Regular.woff') format('woff');
       font-weight: normal;
       font-style: normal;
     }
@@ -66,11 +66,24 @@
       padding: 2rem 1rem;
     }
 
-    .gallery img {
+    .gallery-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .gallery-item img {
       width: 100%;
       height: auto;
       border-radius: 8px;
       object-fit: cover;
+    }
+
+    .gallery-item p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
 
     footer {
@@ -100,16 +113,24 @@
 
   <section>
   <p>
-    ÉQUIPE SALÉE ist eine fortlaufende Sammlung von Bildern, Eindrücken und Erlebnissen – aus meinem Alltag, von unterwegs oder auf Reisen.
-    Ob Lifestyle, Graffiti, Architektur, Bikepacking oder einfach die Dinge, die mir auf meinem Weg begegnen und mich inspirieren – diese Seite ist ein offenes digitales Notizbuch.
+    EQUIPE SALEE ist eine fortlaufende Sammlung von Bildern, Eindrücken und Erlebnissen – aus meinem Alltag, von unterwegs oder auf Reisen. Ob Architektur, Bikepacking oder einfach Dinge, die mir auf meinem Weg begegnen und mich inspirieren – diese Seite ist ein offenes digitales Notizbuch.
     Minimal gedacht, langfristig gepflegt.
   </p>
 </section>
 
   <section class="gallery">
-    <img src="https://source.unsplash.com/400x300/?bikepacking" alt="PHOTOGRAPHY">
-    <img src="https://source.unsplash.com/400x300/?adventure" alt="ARCHITECTURE">
-    <img src="https://source.unsplash.com/400x300/?camping" alt="THEMES">
+    <div class="gallery-item">
+      <img src="https://source.unsplash.com/400x300/?bikepacking" alt="Bikepacking">
+      <p>PHOTOGRAPHY</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://source.unsplash.com/400x300/?adventure" alt="Adventure">
+      <p>ARCHITECTURE</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://source.unsplash.com/400x300/?camping" alt="Camping">
+      <p>PROJECTS</p>
+    </div>
   </section>
 
   <footer>
