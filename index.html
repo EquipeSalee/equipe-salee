@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EQUIPE SALEE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.cdnfonts.com/css/aurora-pro" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f7f7f7;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      overflow: hidden;
+    }
+    header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.7);
+    }
+    header h1 {
+      font-family: 'Aurora Pro', serif;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      background: linear-gradient(90deg, #ccc, #eee, #ccc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      text-align: center;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+    section {
+      max-width: 800px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 2rem 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    footer {
+      margin: 3rem 0 1rem;
+      font-size: 0.8rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="R1-06113-0034.JPG" alt="Titelbild">
+    <h1>EQUIPE SALEE</h1>
+  </header>
+
+  <section>
+  <p>
+    EQUIPE SALEE ist eine fortlaufende Sammlung von Bildern, Eindrücken und Erlebnissen – aus meinem Alltag, von unterwegs oder auf Reisen.
+    Ob Lifestyle, Graffiti, Architektur, Bikepacking oder einfach die Dinge, die mir auf meinem Weg begegnen und mich inspirieren – diese Seite ist ein offenes digitales Notizbuch.
+    Minimal gedacht, langfristig gepflegt.
+  </p>
+</section>
+
+  <section class="gallery">
+    <img src="https://source.unsplash.com/400x300/?bikepacking" alt="Bikepacking">
+    <img src="https://source.unsplash.com/400x300/?adventure" alt="Adventure">
+    <img src="https://source.unsplash.com/400x300/?camping" alt="Camping">
+  </section>
+
+  <footer>
+    &copy; 2025 EQUIPE SALEE. Alle Rechte vorbehalten.
+  </footer>
+</body>
+</html>
