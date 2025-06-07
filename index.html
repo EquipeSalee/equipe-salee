@@ -23,6 +23,56 @@
       align-items: center;
     }
 
+    nav {
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .menu {
+      display: flex;
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+
+    .menu > li {
+      list-style: none;
+      position: relative;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      padding: 0.5rem 0;
+    }
+
+    .submenu li {
+      list-style: none;
+      padding: 0.5rem 1rem;
+      white-space: nowrap;
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+    }
+
     header {
       position: relative;
       width: 100%;
@@ -102,21 +152,49 @@
       section {
         padding: 1rem 0.5rem;
       }
+
+      .menu {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Touren</a>
+        <ul class="submenu">
+          <li><a href="#">Bordeaux–Porto</a></li>
+          <li><a href="#">Faro–Almería</a></li>
+          <li><a href="#">Alpen</a></li>
+          <li><a href="#">Kurztrips</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Photography</a>
+        <ul class="submenu">
+          <li><a href="#">People</a></li>
+          <li><a href="#">Spaces</a></li>
+          <li><a href="#">Details</a></li>
+          <li><a href="#">Analog</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Über uns</a></li>
+    </ul>
+  </nav>
+
   <header>
     <img src="R1-06113-0034.JPG" alt="Titelbild">
     <h1>EQUIPE SALEE</h1>
   </header>
 
   <section>
-  <p>
-    EQUIPE SALEE ist eine fortlaufende Sammlung von Bildern, Eindrücken und Erlebnissen – aus meinem Alltag, von unterwegs oder auf Reisen. Ob Architektur, Bikepacking oder einfach Dinge, die mir auf meinem Weg begegnen und mich inspirieren – diese Seite ist ein offenes digitales Notizbuch.
-    Minimal gedacht, langfristig gepflegt.
-  </p>
-</section>
+    <p>
+      EQUIPE SALEE ist eine fortlaufende Sammlung von Bildern, Eindrücken und Erlebnissen – aus meinem Alltag, von unterwegs oder auf Reisen. Ob Architektur, Bikepacking oder einfach Dinge, die mir auf meinem Weg begegnen und mich inspirieren – diese Seite ist ein offenes digitales Notizbuch.
+      Minimal gedacht, langfristig gepflegt.
+    </p>
+  </section>
 
   <section class="gallery">
     <div class="gallery-item">
