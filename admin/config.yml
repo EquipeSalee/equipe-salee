@@ -26,4 +26,13 @@ collections:
       - {label: "Bild", name: "image", widget: "image"}
       - {label: "Beschreibung", name: "body", widget: "markdown"}
 
-  - name: "movin
+    - name: "movingcanvas"
+    label: "MovingCanvas"
+    folder: "content/photography/movingcanvas"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Bild", name: "image", widget: "image"}
+      - {label: "Beschreibung", name: "body", widget: "markdown"}
+
