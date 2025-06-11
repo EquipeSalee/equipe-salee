@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: EquipeSalee/equipe-salee
+  name: git-gateway
   branch: main
 
 media_folder: "static/img/photography"
@@ -27,12 +26,4 @@ collections:
       - {label: "Bild", name: "image", widget: "image"}
       - {label: "Beschreibung", name: "body", widget: "markdown"}
 
-  - name: "movingcanvas"
-    label: "MovingCanvas"
-    folder: "content/photography/movingcanvas"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Titel", name: "title", widget: "string"}
-      - {label: "Bild", name: "image", widget: "image"}
-      - {label: "Beschreibung", name: "body", widget: "markdown"}
+  - name: "movin
