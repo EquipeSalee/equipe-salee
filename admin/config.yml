@@ -2,17 +2,36 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "static/img"
-public_folder: "/img"
+media_folder: "static/img/photography"
+public_folder: "/img/photography"
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
+  - name: "construction"
+    label: "Construction"
+    folder: "content/photography/construction"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
-      - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Datum", name: "date", widget: "datetime" }
-      - { label: "Inhalt", name: "body", widget: "markdown" }
-      - { label: "Bild", name: "image", widget: "image" }
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Bild", name: "image", widget: "image"}
+      - {label: "Beschreibung", name: "body", widget: "markdown"}
+
+  - name: "steel"
+    label: "Steel"
+    folder: "content/photography/steel"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Bild", name: "image", widget: "image"}
+      - {label: "Beschreibung", name: "body", widget: "markdown"}
+
+  - name: "movingcanvas"
+    label: "MovingCanvas"
+    folder: "content/photography/movingcanvas"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Bild", name: "image", widget: "image"}
+      - {label: "Beschreibung", name: "body", widget: "markdown"}
