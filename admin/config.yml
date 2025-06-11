@@ -12,9 +12,15 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Titel", name: "title", widget: "string"}
-      - {label: "Bild", name: "image", widget: "image"}
-      - {label: "Beschreibung", name: "body", widget: "markdown"}
+      - label: "Titel"
+        name: "title"
+        widget: "string"
+      - label: "Bild"
+        name: "image"
+        widget: "image"
+      - label: "Beschreibung"
+        name: "body"
+        widget: "markdown"
 
   - name: "steel"
     label: "Steel"
@@ -22,17 +28,28 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Titel", name: "title", widget: "string"}
-      - {label: "Bild", name: "image", widget: "image"}
-      - {label: "Beschreibung", name: "body", widget: "markdown"}
+      - label: "Titel"
+        name: "title"
+        widget: "string"
+      - label: "Bild"
+        name: "image"
+        widget: "image"
+      - label: "Beschreibung"
+        name: "body"
+        widget: "markdown"
 
-    - name: "movingcanvas"
+  - name: "movingcanvas"
     label: "MovingCanvas"
     folder: "content/photography/movingcanvas"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Titel", name: "title", widget: "string"}
-      - {label: "Bild", name: "image", widget: "image"}
-      - {label: "Beschreibung", name: "body", widget: "markdown"}
-
+      - label: "Titel"
+        name: "title"
+        widget: "string"
+      - label: "Bild"
+        name: "image"
+        widget: "image"
+      - label: "Beschreibung"
+        name: "body"
+        widget: "markdown"
