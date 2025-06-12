@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <title>Decap CMS</title>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </head>
   <body>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      window.CMS_MANUAL_INIT = true;
+      window.CMS_ENV = "production";
+      CMS.init({
+        config: {
+          backend: {
+            name: "github",
+            repo: "EquipeSalee/equipe-salee",
+            branch: "main",
+            auth_scope: "repo"
+          },
+          media_folder: "static/img/photography",
+          public_folder: "/img/photography",
+          collections: [
+            {
+              name: "construction",
+              label: "Construction",
+              folder: "content/photography/construction",
+              create: true,
+              slug: "{{slug}}",
+              fields: [
+                { label: "Titel", name: "title", widget: "string" },
+                { label: "Bild", name: "image", widget: "image" },
+                { label: "Beschreibung", name: "body", widget: "markdown" }
+              ]
+            },
+            {
+              name: "steel",
+              label: "Steel",
+              folder: "content/photography/steel",
+              create: true,
+              slug: "{{slug}}",
+              fields: [
+                { label: "Titel", name: "title", widget: "string" },
+                { label: "Bild", name: "image", widget: "image" },
+                { label: "Beschreibung", name: "body", widget: "markdown" }
+              ]
+            },
+            {
+              name: "movingcanvas",
+              label: "MovingCanvas",
+              folder: "content/photography/movingcanvas",
+              create: true,
+              slug: "{{slug}}",
+              fields: [
+                { label: "Titel", name: "title", widget: "string" },
+                { label: "Bild", name: "image", widget: "image" },
+                { label: "Beschreibung", name: "body", widget: "markdown" }
+              ]
+            }
+          ]
+        }
+      });
+    </script>
   </body>
 </html>
