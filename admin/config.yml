@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  repo: EquipeSalee/equipe-salee
   branch: main
 
 media_folder: "static/img/photography"
