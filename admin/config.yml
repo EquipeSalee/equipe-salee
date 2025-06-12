@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: EquipeSalee/equipe-salee
   branch: main
 
 media_folder: "static/img/photography"
@@ -12,15 +13,9 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - label: "Titel"
-        name: "title"
-        widget: "string"
-      - label: "Bild"
-        name: "image"
-        widget: "image"
-      - label: "Beschreibung"
-        name: "body"
-        widget: "markdown"
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Bild", name: "image", widget: "image"}
+      - {label: "Beschreibung", name: "body", widget: "markdown"}
 
   - name: "steel"
     label: "Steel"
@@ -28,15 +23,9 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - label: "Titel"
-        name: "title"
-        widget: "string"
-      - label: "Bild"
-        name: "image"
-        widget: "image"
-      - label: "Beschreibung"
-        name: "body"
-        widget: "markdown"
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Bild", name: "image", widget: "image"}
+      - {label: "Beschreibung", name: "body", widget: "markdown"}
 
   - name: "movingcanvas"
     label: "MovingCanvas"
@@ -44,12 +33,6 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - label: "Titel"
-        name: "title"
-        widget: "string"
-      - label: "Bild"
-        name: "image"
-        widget: "image"
-      - label: "Beschreibung"
-        name: "body"
-        widget: "markdown"
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Bild", name: "image", widget: "image"}
+      - {label: "Beschreibung", name: "body", widget: "markdown"}
